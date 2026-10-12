@@ -5,9 +5,9 @@
 ## 维护版本
 
 - 项目：Tab Groups Pro 2.0.0
-- 维护者与发布者：Shelus2021
+- 维护者与发布者：shelus2021
 - 联系方式：[shelus2021@foxmail.com](mailto:shelus2021@foxmail.com)
-- 仓库：<https://github.com/Shelus2021/tab-groups-pro>
+- 仓库：<https://github.com/shelus2021/tab-groups-pro>
 
 ## 上游来源
 
@@ -22,7 +22,7 @@
 
 ## 许可范围
 
-Shelus2021 仅对 Shelus2021 原创的新增内容和修改部分，按 [LICENSE](LICENSE) 所述条款提供许可。准备此说明时未发现上游许可证，因此不声称 Shelus2021 有权对上游派生代码进行重新许可。
+shelus2021 仅对 shelus2021 原创的新增内容和修改部分，按 [LICENSE](LICENSE) 所述条款提供许可。准备此说明时未发现上游许可证，因此不声称 shelus2021 有权对上游派生代码进行重新许可。
 
 如你是相关权利人，并认为本项目的内容、署名或分发方式存在问题，请通过 [shelus2021@foxmail.com](mailto:shelus2021@foxmail.com) 联系，并提供足以识别相关材料的信息。维护者将对有关署名、授权或移除的合理请求进行审查。
 

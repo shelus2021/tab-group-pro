@@ -4,7 +4,7 @@
 
 Create persistent file groups for each VS Code workspace and reopen the files you need in a predictable order.
 
-[Install Tab Groups Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Shelus2021.tab-groups-pro)
+[Install Tab Groups Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tab-groups-pro)
 
 ## Features
 
@@ -57,6 +57,6 @@ Based on the original work by [bentodaniel](https://github.com/bentodaniel/vs-ta
 
 ## License and attribution
 
-Original additions and modifications authored by Shelus2021 are provided under the MIT License. Portions derived from the upstream VS Tab Groups project remain subject to the rights of their respective copyright holders because no upstream license was found when this version was prepared.
+Original additions and modifications authored by shelus2021 are provided under the MIT License. Portions derived from the upstream VS Tab Groups project remain subject to the rights of their respective copyright holders because no upstream license was found when this version was prepared.
 
 See [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md) for the exact scope. If you believe this project infringes your rights, contact [shelus2021@foxmail.com](mailto:shelus2021@foxmail.com).

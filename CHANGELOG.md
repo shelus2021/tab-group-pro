@@ -4,6 +4,12 @@
 
 All notable changes to Tab Groups Pro are documented here.
 
+## [2.0.4] - 2026-10-12
+
+### Changed
+
+- Normalized the publisher identity and related links to lowercase `shelus2021`.
+
 ## [2.0.3] - 2026-10-09
 
 ### Changed
@@ -27,7 +33,7 @@ All notable changes to Tab Groups Pro are documented here.
 ### Added
 
 - Added a dedicated Tab Groups Pro Marketplace icon and editable SVG source.
-- Added a scoped MIT license for Shelus2021-authored contributions, upstream attribution, and a rights-holder contact notice.
+- Added a scoped MIT license for shelus2021-authored contributions, upstream attribution, and a rights-holder contact notice.
 - Remembered expanded and collapsed state for each group.
 - Clear-group action that keeps the group itself.
 - Commands to copy all absolute or relative file paths from a group.

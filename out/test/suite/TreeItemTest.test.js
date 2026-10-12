@@ -6,7 +6,7 @@ const TreeItem_1 = require("../../TreeItem");
 suite('TreeItem Test Suite', () => {
     vscode.window.showInformationMessage('Start all \'TreeItem\' tests.');
     test("Should start extension 'Tab Groups Pro'", async () => {
-        const started = vscode.extensions.getExtension("Shelus2021.tab-groups-pro");
+        const started = vscode.extensions.getExtension("shelus2021.tab-groups-pro");
         assert.notEqual(started, undefined);
         assert.equal(started?.isActive, true);
     });

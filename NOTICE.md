@@ -5,9 +5,9 @@
 ## Maintained version
 
 - Project: Tab Groups Pro 2.0.0
-- Maintainer and publisher: Shelus2021
+- Maintainer and publisher: shelus2021
 - Contact: [shelus2021@foxmail.com](mailto:shelus2021@foxmail.com)
-- Repository: <https://github.com/Shelus2021/tab-groups-pro>
+- Repository: <https://github.com/shelus2021/tab-groups-pro>
 
 ## Upstream source
 
@@ -22,7 +22,7 @@ The maintained version includes substantial changes to group behavior, file sele
 
 ## License scope
 
-Shelus2021 licenses only the original additions and modifications authored by Shelus2021 under the terms stated in [LICENSE](LICENSE). No upstream license was found when this notice was prepared, so no claim is made that Shelus2021 can relicense upstream-derived code.
+shelus2021 licenses only the original additions and modifications authored by shelus2021 under the terms stated in [LICENSE](LICENSE). No upstream license was found when this notice was prepared, so no claim is made that shelus2021 can relicense upstream-derived code.
 
 If you are a rights holder and believe any content, attribution, or distribution is improper, contact [shelus2021@foxmail.com](mailto:shelus2021@foxmail.com) with enough information to identify the affected material. The maintainer will review reasonable requests concerning attribution, authorization, or removal.
 

@@ -7,7 +7,7 @@ This directory was recovered from an installed extension. It is suitable for run
 ## Blockers to resolve before public publishing
 
 1. **Confirm redistribution rights.** The upstream repository does not currently contain a detected license file. A public repository is not, by itself, a redistribution license. Ask the upstream author to add a license or obtain explicit permission before publishing this modified build.
-2. **Confirm the extension identity.** The package now uses publisher `Shelus2021`, name `tab-groups-pro`, version `2.0.0`, and repository `Shelus2021/tab-groups-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
+2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tab-groups-pro`, version `2.0.4`, and repository `shelus2021/tab-groups-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
 3. Confirm that `name` and `displayName` are available in the Marketplace before the first publication.
 4. Restore a maintainable source tree. The current snapshot contains `out/*.js`, but not the TypeScript `src` directory, `tsconfig.json`, lint configuration, or lock file. Prefer applying these changes to a fresh fork of the upstream source repository.
 
@@ -50,7 +50,7 @@ Install the generated VSIX into a clean VS Code profile and verify:
 
 ## Publishing
 
-Use the latest `@vscode/vsce`. Confirm the `Shelus2021` Marketplace publisher first, then package locally before publishing:
+Use the latest `@vscode/vsce`. Confirm the `shelus2021` Marketplace publisher first, then package locally before publishing:
 
 ```powershell
 npx @vscode/vsce package

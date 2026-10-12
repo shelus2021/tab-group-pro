@@ -13,20 +13,20 @@
 		"color": "#151B2B",
 		"theme": "dark"
 	},
-	"version": "2.0.3",
-	"publisher": "Shelus2021",
+	"version": "2.0.4",
+	"publisher": "shelus2021",
 	"author": {
-		"name": "Shelus2021",
+		"name": "shelus2021",
 		"email": "shelus2021@foxmail.com"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Shelus2021/tab-groups-pro.git"
+		"url": "https://github.com/shelus2021/tab-groups-pro.git"
 	},
-	"homepage": "https://github.com/Shelus2021/tab-groups-pro#readme",
+	"homepage": "https://github.com/shelus2021/tab-groups-pro#readme",
 	"bugs": {
-		"url": "https://github.com/Shelus2021/tab-groups-pro/issues"
+		"url": "https://github.com/shelus2021/tab-groups-pro/issues"
 	},
 	"engines": {
 		"vscode": "^1.74.0"
