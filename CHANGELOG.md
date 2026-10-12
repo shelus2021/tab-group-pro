@@ -4,6 +4,12 @@
 
 All notable changes to Tabs Group Pro are documented here.
 
+## [2.0.6] - 2026-10-12
+
+### Changed
+
+- Updated the Marketplace preview screenshots to reflect the current extension name and interface.
+
 ## [2.0.5] - 2026-10-12
 
 ### Changed
