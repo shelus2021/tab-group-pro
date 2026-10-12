@@ -7,15 +7,15 @@
 ## 公开发布前必须解决
 
 1. **确认再分发权利。** 上游仓库目前没有可识别的许可证文件。代码公开可见并不等同于获得复制、修改和重新发布许可。发布此修改版本前，应请上游作者补充许可证或取得明确授权。
-2. **确认扩展身份。** 当前包已设置发布者 `shelus2021`、名称 `tab-groups-pro`、版本 `2.0.4` 和仓库 `shelus2021/tab-groups-pro`。请确认扩展商店中已创建该发布者且归你所有。
+2. **确认扩展身份。** 当前包已设置发布者 `shelus2021`、名称 `tabs-group-pro`、版本 `2.0.5` 和仓库 `shelus2021/tabs-group-pro`。请确认扩展商店中已创建该发布者且归你所有。
 3. 首次发布前，确认 `name` 和 `displayName` 在扩展商店中可用。
 4. 恢复可维护的源码工程。当前目录包含 `out/*.js`，但缺少 TypeScript `src`、`tsconfig.json`、代码检查配置和依赖锁文件。建议从上游源码仓库创建 fork，再把本次改动移植回 TypeScript 源码。
 
 ## 扩展商店展示
 
 - 在扩展根目录保留 `README.md`、`CHANGELOG.md` 和最终许可证文件。
-- 已包含商店图标 `resources/tab-groups-pro.png`，应保持至少 128×128 像素；扩展商店图标不能使用 SVG。
-- `resources/tab-groups.svg` 是 VS Code 活动栏单色图标，`resources/tab-groups-pro.svg` 是可编辑的品牌图标源稿。
+- 已包含商店图标 `resources/tabs-group-pro.png`，应保持至少 128×128 像素；扩展商店图标不能使用 SVG。
+- `resources/tab-groups.svg` 是 VS Code 活动栏单色图标，`resources/tabs-group-pro.svg` 是可编辑的品牌图标源稿。
 - 仓库地址确定后，补充 `galleryBanner`、`homepage` 和 `bugs`。
 - README 和 CHANGELOG 中的远程图片必须使用 HTTPS；扩展商店会拒绝不受信任的 SVG 内容。
 

@@ -26,30 +26,30 @@ class TreeDataProvider {
         // Top level, add a new group
         this._commandDisposables = []; // 存储所有命令的 Disposable
         this._commandDisposables.push(
-            vscode.commands.registerCommand("tab_groups_pro.expandAllGroups", () => this.expandAllGroups()),
-            vscode.commands.registerCommand("tab_groups_pro.collapseAllGroups", () => this.collapseAllGroups()),
-            vscode.commands.registerCommand("tab_groups_pro.addTabGroup", () => this.addTabGroup()),
-            vscode.commands.registerCommand("tab_groups_pro.removeAllGroups", () => this.removeAllGroups()),
+            vscode.commands.registerCommand("tabs_group_pro.expandAllGroups", () => this.expandAllGroups()),
+            vscode.commands.registerCommand("tabs_group_pro.collapseAllGroups", () => this.collapseAllGroups()),
+            vscode.commands.registerCommand("tabs_group_pro.addTabGroup", () => this.addTabGroup()),
+            vscode.commands.registerCommand("tabs_group_pro.removeAllGroups", () => this.removeAllGroups()),
             // Mid level, actions on tab groups
-            vscode.commands.registerCommand("tab_groups_pro.addEntry", (parent) => this.addChildToItem(parent)),
-            vscode.commands.registerCommand("tab_groups_pro.openTabGroup", (item) => this.openTabGroup(item)),
-            vscode.commands.registerCommand("tab_groups_pro.closeTabGroup", (item) => this.closeTabGroup(item)),
-            vscode.commands.registerCommand("tab_groups_pro.copyTabsPathInGroup", (item) => this.copyTabsPathInGroup(item)),
-            vscode.commands.registerCommand("tab_groups_pro.copyTabsRelativePathInGroup", (item) => this.copyTabsRelativePathInGroup(item)),
-            vscode.commands.registerCommand("tab_groups_pro.editTabGroupName", (item) => this.editTabGroupName(item)),
-            vscode.commands.registerCommand("tab_groups_pro.clearTabsInGroup", (item) => this.clearTabsInGroup(item)),
-            vscode.commands.registerCommand("tab_groups_pro.removeTabGroup", (item) => this.removeTabGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.addEntry", (parent) => this.addChildToItem(parent)),
+            vscode.commands.registerCommand("tabs_group_pro.openTabGroup", (item) => this.openTabGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.closeTabGroup", (item) => this.closeTabGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.copyTabsPathInGroup", (item) => this.copyTabsPathInGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.copyTabsRelativePathInGroup", (item) => this.copyTabsRelativePathInGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.editTabGroupName", (item) => this.editTabGroupName(item)),
+            vscode.commands.registerCommand("tabs_group_pro.clearTabsInGroup", (item) => this.clearTabsInGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.removeTabGroup", (item) => this.removeTabGroup(item)),
             // Low level, actions on tabs
-            vscode.commands.registerCommand("tab_groups_pro.openTab", (item) => this.openTab(item)),
-            vscode.commands.registerCommand("tab_groups_pro.closeTab", (item) => this.closeTab(item)),
-            vscode.commands.registerCommand("tab_groups_pro.removeTab", (item) => this.removeTab(item)),
+            vscode.commands.registerCommand("tabs_group_pro.openTab", (item) => this.openTab(item)),
+            vscode.commands.registerCommand("tabs_group_pro.closeTab", (item) => this.closeTab(item)),
+            vscode.commands.registerCommand("tabs_group_pro.removeTab", (item) => this.removeTab(item)),
             // General
-            vscode.commands.registerCommand("tab_groups_pro.item_clicked", (item) => this.item_clicked(item)),
-            vscode.commands.registerCommand("tab_groups_pro.moveUp", (item) => this.moveItemUp(item)),
-            vscode.commands.registerCommand("tab_groups_pro.moveDown", (item) => this.moveItemDown(item)),
+            vscode.commands.registerCommand("tabs_group_pro.item_clicked", (item) => this.item_clicked(item)),
+            vscode.commands.registerCommand("tabs_group_pro.moveUp", (item) => this.moveItemUp(item)),
+            vscode.commands.registerCommand("tabs_group_pro.moveDown", (item) => this.moveItemDown(item)),
             // Editor
-            vscode.commands.registerCommand("tab_groups_pro.addEntryToGroup", (item) => this.addEntryToGroup(item)),
-            vscode.commands.registerCommand("tab_groups_pro.addAllToGroup", () => this.addAllOpenTabsToGroup()),
+            vscode.commands.registerCommand("tabs_group_pro.addEntryToGroup", (item) => this.addEntryToGroup(item)),
+            vscode.commands.registerCommand("tabs_group_pro.addAllToGroup", () => this.addAllOpenTabsToGroup()),
         );
         // treeView事件监听器集合
         this._treeViewDisposables = [];
@@ -130,7 +130,7 @@ class TreeDataProvider {
         let result = new vscode.TreeItem(title, item.collapsibleState);
         // here we add our command which executes our memberfunction
         result.command = {
-            command: "tab_groups_pro.item_clicked",
+            command: "tabs_group_pro.item_clicked",
             title: title,
             arguments: [item],
         };
@@ -326,7 +326,7 @@ class TreeDataProvider {
                 parent.add_child(newChild);
                 filePaths.push(filePath);
             }
-            if(vscode.workspace.getConfiguration("tab-groups-pro").get("closeTabsOnAddAllToGroup")){
+            if(vscode.workspace.getConfiguration("tabs-group-pro").get("closeTabsOnAddAllToGroup")){
                 await this.closeEditor(filePaths);
             }
             parent.updateTooltip();
@@ -387,7 +387,7 @@ class TreeDataProvider {
      */
     async openTabGroup(item) {
         // Check if the user wants the other tabs to be closed when opening a new group
-        if (vscode.workspace.getConfiguration("tab-groups-pro").get("closeTabsOnOpenGroup")) {
+        if (vscode.workspace.getConfiguration("tabs-group-pro").get("closeTabsOnOpenGroup")) {
             // close every open tab
             await vscode.commands.executeCommand("workbench.action.closeAllEditors");
         }

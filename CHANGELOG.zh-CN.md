@@ -2,7 +2,14 @@
 
 简体中文 | [English](CHANGELOG.md)
 
-本文件记录 Tab Groups Pro 的重要变更。
+本文件记录 Tabs Group Pro 的重要变更。
+
+## 2.0.5 — 2026-10-12
+
+### 变更
+
+- 将扩展标识统一更名为 `tabs-group-pro` / **Tabs Group Pro**。
+- 同步更新命令、视图、配置、扩展商店、仓库和图标引用。
 
 ## 2.0.4 — 2026-10-12
 
@@ -32,7 +39,7 @@
 
 ### 新增
 
-- 增加 Tab Groups Pro 扩展商店图标及可编辑的 SVG 源稿。
+- 增加 Tabs Group Pro 扩展商店图标及可编辑的 SVG 源稿。
 - 为 shelus2021 原创贡献增加限定范围的 MIT 许可，并补充上游署名和权利人联系说明。
 - 记忆每个分组的展开和折叠状态。
 - 增加“清空分组”，删除全部文件但保留分组。
@@ -50,7 +57,7 @@
 - 新建分组默认保持折叠。
 - 删除空分组时不再要求二次确认。
 - 操作按钮改用 VS Code 内置产品图标。
-- `tab-groups-pro.closeTabsOnOpenGroup` 默认值改为 `false`。
+- `tabs-group-pro.closeTabsOnOpenGroup` 默认值改为 `false`。
 - 重新整理命令名称、菜单、输入提示和错误信息。
 - 扩展停用时正确释放命令、视图、事件监听器、事件发射器和日志输出通道。
 

@@ -7,15 +7,15 @@ This directory was recovered from an installed extension. It is suitable for run
 ## Blockers to resolve before public publishing
 
 1. **Confirm redistribution rights.** The upstream repository does not currently contain a detected license file. A public repository is not, by itself, a redistribution license. Ask the upstream author to add a license or obtain explicit permission before publishing this modified build.
-2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tab-groups-pro`, version `2.0.4`, and repository `shelus2021/tab-groups-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
+2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tabs-group-pro`, version `2.0.5`, and repository `shelus2021/tabs-group-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
 3. Confirm that `name` and `displayName` are available in the Marketplace before the first publication.
 4. Restore a maintainable source tree. The current snapshot contains `out/*.js`, but not the TypeScript `src` directory, `tsconfig.json`, lint configuration, or lock file. Prefer applying these changes to a fresh fork of the upstream source repository.
 
 ## Marketplace presentation
 
 - Keep `README.md`, `CHANGELOG.md`, and the final license file in the extension root.
-- The included `resources/tab-groups-pro.png` is the Marketplace icon. Keep it at least 128×128 pixels; Marketplace icons cannot be SVG.
-- The monochrome `resources/tab-groups.svg` is the VS Code Activity Bar icon. The editable brand source is `resources/tab-groups-pro.svg`.
+- The included `resources/tabs-group-pro.png` is the Marketplace icon. Keep it at least 128×128 pixels; Marketplace icons cannot be SVG.
+- The monochrome `resources/tab-groups.svg` is the VS Code Activity Bar icon. The editable brand source is `resources/tabs-group-pro.svg`.
 - Add `galleryBanner`, `homepage`, and `bugs` after the final repository URL is known.
 - Use HTTPS for all remote images in README and CHANGELOG. Marketplace publishing rejects untrusted SVG content.
 

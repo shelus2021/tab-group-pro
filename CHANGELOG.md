@@ -2,7 +2,14 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | English
 
-All notable changes to Tab Groups Pro are documented here.
+All notable changes to Tabs Group Pro are documented here.
+
+## [2.0.5] - 2026-10-12
+
+### Changed
+
+- Renamed the extension identity to `tabs-group-pro` / **Tabs Group Pro**.
+- Updated command, view, configuration, Marketplace, repository, and icon references to the new identity.
 
 ## [2.0.4] - 2026-10-12
 
@@ -32,7 +39,7 @@ All notable changes to Tab Groups Pro are documented here.
 
 ### Added
 
-- Added a dedicated Tab Groups Pro Marketplace icon and editable SVG source.
+- Added a dedicated Tabs Group Pro Marketplace icon and editable SVG source.
 - Added a scoped MIT license for shelus2021-authored contributions, upstream attribution, and a rights-holder contact notice.
 - Remembered expanded and collapsed state for each group.
 - Clear-group action that keeps the group itself.
@@ -50,7 +57,7 @@ All notable changes to Tab Groups Pro are documented here.
 - Keep new groups collapsed by default.
 - Remove empty groups without an extra confirmation.
 - Use built-in VS Code product icons for actions.
-- Default `tab-groups-pro.closeTabsOnOpenGroup` to `false`.
+- Default `tabs-group-pro.closeTabsOnOpenGroup` to `false`.
 - Improve command names, menus, prompts, and error messages.
 - Dispose commands, views, event listeners, emitters, and the output channel cleanly.
 

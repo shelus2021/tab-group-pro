@@ -5,13 +5,13 @@ const vscode = require("vscode");
 const TreeDataProvider_1 = require("../../TreeDataProvider");
 suite('TreeDataProvider Test Suite', () => {
     vscode.window.showInformationMessage('Start all \'TreeDataProvider\' tests.');
-    test("Should start extension 'Tab Groups Pro'", async () => {
-        const started = vscode.extensions.getExtension("shelus2021.tab-groups-pro");
+    test("Should start extension 'Tabs Group Pro'", async () => {
+        const started = vscode.extensions.getExtension("shelus2021.tabs-group-pro");
         assert.notEqual(started, undefined);
         assert.equal(started?.isActive, true);
     });
     test("Create new tree data provider", async () => {
-        const ext = vscode.extensions.getExtension("shelus2021.tab-groups-pro");
+        const ext = vscode.extensions.getExtension("shelus2021.tabs-group-pro");
         if (!ext) {
             throw Error("Could not get extension.");
         }

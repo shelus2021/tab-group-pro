@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.disposeOutputChannel = exports.logMessage = exports.getCurrentlyOpenFiles = exports.normalizePath = exports.createQuickPickGroupsOptions = exports.validateWorkspace = exports.NEW_GROUP_LABEL = exports.EXTENSION_ID = void 0;
 const vscode_1 = require("vscode");
 const path_1 = require("path");
-exports.EXTENSION_ID = "tab_groups_pro";
+exports.EXTENSION_ID = "tabs_group_pro";
 exports.NEW_GROUP_LABEL = "Create New Group";
 function validateWorkspace(fileUri) {
     // 如果没有提供 fileUri，则尝试从 activeTextEditor 获取
@@ -61,7 +61,7 @@ function getCurrentlyOpenFiles(workspaceDir) {
 }
 exports.getCurrentlyOpenFiles = getCurrentlyOpenFiles;
 // 创建一个输出通道
-const outputChannel = vscode_1.window.createOutputChannel('Tab Groups Pro',{
+const outputChannel = vscode_1.window.createOutputChannel('Tabs Group Pro',{
     log: !0
 });
 function logMessage(message) {

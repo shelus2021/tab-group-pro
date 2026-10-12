@@ -4,10 +4,10 @@
 
 ## Maintained version
 
-- Project: Tab Groups Pro 2.0.0
+- Project: Tabs Group Pro 2.0.5
 - Maintainer and publisher: shelus2021
 - Contact: [shelus2021@foxmail.com](mailto:shelus2021@foxmail.com)
-- Repository: <https://github.com/shelus2021/tab-groups-pro>
+- Repository: <https://github.com/shelus2021/tabs-group-pro>
 
 ## Upstream source
 
