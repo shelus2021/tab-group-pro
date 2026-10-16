@@ -13,7 +13,7 @@
 		"color": "#151B2B",
 		"theme": "dark"
 	},
-	"version": "2.0.6",
+	"version": "2.0.7",
 	"publisher": "shelus2021",
 	"author": {
 		"name": "shelus2021",
@@ -37,7 +37,7 @@
 	"activationEvents": [
 		"onView:tabs_group_pro"
 	],
-	"main": "./out/extension.js",
+	"main": "./scripts/extension.js",
 	"contributes": {
 		"configuration": {
 			"title": "Tabs Group Pro",
@@ -88,6 +88,16 @@
 					"command": "tabs_group_pro.collapseAllGroups",
 					"when": "view == tabs_group_pro",
 					"group": "navigation@1"
+				},
+				{
+					"command": "tabs_group_pro.importGroups",
+					"when": "view == tabs_group_pro",
+					"group": "navigation@2"
+				},
+				{
+					"command": "tabs_group_pro.exportGroups",
+					"when": "view == tabs_group_pro",
+					"group": "navigation@3"
 				}
 			],
 			"view/item/context": [
@@ -202,6 +212,16 @@
 				"icon": "$(close-all)"
 			},
 			{
+				"command": "tabs_group_pro.importGroups",
+				"title": "Tabs Group Pro: Import Groups from JSON",
+				"icon": "$(download)"
+			},
+			{
+				"command": "tabs_group_pro.exportGroups",
+				"title": "Tabs Group Pro: Export Groups to JSON",
+				"icon": "$(export)"
+			},
+			{
 				"command": "tabs_group_pro.addEntry",
 				"title": "Add Tab",
 				"icon": "$(new-file)"
@@ -275,7 +295,7 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run check",
-		"check": "node --check out/extension.js && node --check out/TreeDataProvider.js && node --check out/TreeItem.js && node --check out/Util.js",
+		"check": "node --check scripts/extension.js && node --check scripts/group-data.js && node --check scripts/tree-drag-drop.js && node --check scripts/tree-item.js && node --check scripts/tree-provider.js && node --check scripts/vscode-utils.js",
 		"test": "npm run check"
 	},
 	"devDependencies": {

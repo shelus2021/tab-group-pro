@@ -1,7 +1,6 @@
 .vsixmanifest
 .vscode/**
 node_modules/**
-out/test/**
 *.vsix
 PUBLISHING.md
 PUBLISHING.zh-CN.md

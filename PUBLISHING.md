@@ -7,9 +7,9 @@ This directory was recovered from an installed extension. It is suitable for run
 ## Blockers to resolve before public publishing
 
 1. **Confirm redistribution rights.** The upstream repository does not currently contain a detected license file. A public repository is not, by itself, a redistribution license. Ask the upstream author to add a license or obtain explicit permission before publishing this modified build.
-2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tabs-group-pro`, version `2.0.6`, and repository `shelus2021/tabs-group-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
+2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tabs-group-pro`, version `2.0.7`, and repository `shelus2021/tabs-group-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
 3. Confirm that `name` and `displayName` are available in the Marketplace before the first publication.
-4. Restore a maintainable source tree. The current snapshot contains `out/*.js`, but not the TypeScript `src` directory, `tsconfig.json`, lint configuration, or lock file. Prefer applying these changes to a fresh fork of the upstream source repository.
+4. Restore a maintainable source tree. The current snapshot contains the packaged runtime in `scripts/*.js` and includes `package-lock.json`, but not the TypeScript `src` directory, `tsconfig.json`, or lint configuration. Prefer applying these changes to a fresh fork of the upstream source repository.
 
 ## Marketplace presentation
 

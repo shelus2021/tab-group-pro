@@ -6,12 +6,21 @@ Create persistent file groups for each VS Code workspace and reopen the files yo
 
 [Install Tabs Group Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
 
+## 2.0.7 highlights
+
+1. **Workspace-relative tab storage**: grouped tabs continue to open correctly after the project is moved.
+2. **Powerful drag and drop**: freely reorder groups, move tabs within or across groups, drag editor tabs into groups, and drag groups or tabs into the editor to open them.
+3. **Flexible group JSON import and export**: select one or more groups, select all during export, and validate group names and tab paths before importing.
+
 ## Features
 
 - Create, rename, reorder, clear, and remove file groups.
+- Drag groups to reorder them and drag tabs within or across groups. You can also drag editor tabs into groups, or drag groups and tabs into the editor to open them. Dragging a group into the editor opens its tabs in saved order and skips files that are already open. The Move Up and Move Down actions remain available as a fallback.
 - Add the current file or all open text tabs to a group.
 - Open or close every file in a group in the saved order.
 - Keep group data and expanded state per workspace.
+- Persist grouped tabs as workspace-relative paths so exported groups can follow a relocated project.
+- Import or export one or more groups as JSON from the view toolbar.
 - Preview a file with one click, or pin it with **Open Tab** or a double-click.
 - Display file-theme icons, file names, relative folders, full-path tooltips, and the number of files in each group.
 - Copy all absolute or workspace-relative paths from a group.
@@ -29,9 +38,27 @@ Create persistent file groups for each VS Code workspace and reopen the files yo
 1. Open a folder or workspace in VS Code.
 2. Open **Tabs Group Pro** from the Activity Bar.
 3. Run **Tabs Group Pro: Add a New Group**, or use **Add All Opened Tabs to Group**.
-4. Use a group's inline and context-menu actions to add, reorder, open, close, copy, clear, or remove entries.
+4. Drag groups or tabs to reorder them. Drop a tab on another group to move it across groups, or drag tabs in either direction between the editor and a group.
 
-Groups are stored in VS Code workspace state and restored when that workspace is opened again.
+Groups are stored in VS Code workspace state and restored when that workspace is opened again. Grouped tabs are persisted as workspace-relative paths and resolved against the currently open workspace when loaded.
+
+Use the **Import Groups from JSON** and **Export Groups to JSON** buttons in the view title. Export lets you select individual groups or select all groups at once. Import validates the entire file before changing any data; if any tab path does not match an existing workspace file, no groups are imported.
+
+The JSON format is:
+
+```json
+{
+  "groups": [
+    {
+      "name": "Frontend",
+      "tabs": [
+        "src/app.js",
+        "src/styles.css"
+      ]
+    }
+  ]
+}
+```
 
 ## Settings
 
@@ -45,6 +72,7 @@ Groups are stored in VS Code workspace state and restored when that workspace is
 - Files must belong to an open VS Code workspace.
 - Only text-file tabs can be added through **Add All Opened Tabs to Group**.
 - Group data is workspace-specific and is not synchronized between machines by this extension.
+- Imported tab paths must be relative, stay inside the workspace, and match existing files. A conflicting group name, duplicate entry, ambiguous multi-root match, or missing file blocks the whole import.
 - The current repository snapshot contains the packaged JavaScript runtime, not the original TypeScript source tree. See [PUBLISHING.md](PUBLISHING.md) before starting long-term development.
 
 ## Release notes

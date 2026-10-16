@@ -4,6 +4,14 @@
 
 All notable changes to Tabs Group Pro are documented here.
 
+## [2.0.7] - 2026-10-17
+
+> Before updating, make a record of your existing groups.
+
+1. Tabs are stored as workspace-relative paths, so they continue to open correctly after the project is moved.
+2. Powerful drag and drop: freely reorder groups, move tabs within or across groups, drag editor tabs into groups, and drag groups or tabs into the editor to open them.
+3. Flexible group JSON import and export: select one or more groups, select all during export, and validate the complete file before importing.
+
 ## [2.0.6] - 2026-10-12
 
 ### Changed
