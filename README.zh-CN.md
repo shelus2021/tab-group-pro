@@ -6,12 +6,6 @@
 
 [从 Visual Studio Marketplace 安装 Tabs Group Pro](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
 
-## 2.0.7 亮点
-
-1. **标签采用相对路径存储**：项目迁移位置后，分组中的标签仍能正确打开。
-2. **强大的拖拽能力**：可任意拖拽移动分组、在组内或跨分组移动标签，还能将编辑器标签拖入分组，或将分组和标签拖到编辑器打开。
-3. **灵活的分组 JSON 导入导出能力**：可选择一个或多个分组，导出时支持一键全选，导入前会完整校验分组名称和标签路径。
-
 ## 功能
 
 - 创建、重命名、排序、清空和删除文件分组。

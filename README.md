@@ -6,12 +6,6 @@ Create persistent file groups for each VS Code workspace and reopen the files yo
 
 [Install Tabs Group Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
 
-## 2.0.7 highlights
-
-1. **Workspace-relative tab storage**: grouped tabs continue to open correctly after the project is moved.
-2. **Powerful drag and drop**: freely reorder groups, move tabs within or across groups, drag editor tabs into groups, and drag groups or tabs into the editor to open them.
-3. **Flexible group JSON import and export**: select one or more groups, select all during export, and validate group names and tab paths before importing.
-
 ## Features
 
 - Create, rename, reorder, clear, and remove file groups.
