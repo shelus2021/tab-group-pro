@@ -4,6 +4,10 @@
 
 All notable changes to Tab Group Pro are documented here.
 
+## [2.0.9] - 2026-10-22
+
+- Updated the Marketplace description and empty-state guidance.
+
 ## [2.0.8] - 2026-10-22
 
 > The extension ID remains `shelus2021.tabs-group-pro`.
