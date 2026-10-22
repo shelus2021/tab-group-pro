@@ -4,7 +4,7 @@
 
 Create persistent file groups for each VS Code workspace and reopen the files you need in a predictable order.
 
-[Install Tab Group Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tab-group-pro)
+[Install Tab Group Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
 
 ## Features
 

@@ -4,7 +4,7 @@
 
 为每个 VS Code 工作区创建可持久保存的文件分组，并按确定的顺序重新打开所需文件。
 
-[从 Visual Studio Marketplace 安装 Tab Group Pro](https://marketplace.visualstudio.com/items?itemName=shelus2021.tab-group-pro)
+[从 Visual Studio Marketplace 安装 Tab Group Pro](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
 
 ## 功能
 

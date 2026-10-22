@@ -6,9 +6,9 @@ All notable changes to Tab Group Pro are documented here.
 
 ## [2.0.8] - 2026-10-22
 
-> Before updating, make a record of your existing groups because the extension identity has changed.
+> The extension ID remains `shelus2021.tabs-group-pro`.
 
-- Renamed the extension identity to `tab-group-pro` / **Tab Group Pro**, including command, view, configuration, Marketplace, repository, resource, and export-file references.
+- Renamed the displayed product name to **Tab Group Pro** while retaining the existing extension ID; updated command, view, configuration, repository, resource, and export-file references to the singular branding.
 - Updated the Marketplace screenshots and removed the obsolete **Add All Open Tabs** empty-state action from the preview.
 
 ## [2.0.7] - 2026-10-17
@@ -29,7 +29,7 @@ All notable changes to Tab Group Pro are documented here.
 
 ### Changed
 
-- Renamed the extension identity to `tab-group-pro` / **Tab Group Pro**.
+- Renamed the extension ID to `tabs-group-pro`.
 - Updated command, view, configuration, Marketplace, repository, and icon references to the new identity.
 
 ## [2.0.4] - 2026-10-12
