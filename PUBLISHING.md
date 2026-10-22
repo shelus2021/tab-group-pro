@@ -7,15 +7,15 @@ This directory was recovered from an installed extension. It is suitable for run
 ## Blockers to resolve before public publishing
 
 1. **Confirm redistribution rights.** The upstream repository does not currently contain a detected license file. A public repository is not, by itself, a redistribution license. Ask the upstream author to add a license or obtain explicit permission before publishing this modified build.
-2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tabs-group-pro`, version `2.0.7`, and repository `shelus2021/tabs-group-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
+2. **Confirm the extension identity.** The package now uses publisher `shelus2021`, name `tab-group-pro`, version `2.0.8`, and repository `shelus2021/tab-group-pro`. Confirm that the Marketplace publisher ID exists and belongs to you.
 3. Confirm that `name` and `displayName` are available in the Marketplace before the first publication.
 4. Restore a maintainable source tree. The current snapshot contains the packaged runtime in `scripts/*.js` and includes `package-lock.json`, but not the TypeScript `src` directory, `tsconfig.json`, or lint configuration. Prefer applying these changes to a fresh fork of the upstream source repository.
 
 ## Marketplace presentation
 
 - Keep `README.md`, `CHANGELOG.md`, and the final license file in the extension root.
-- The included `resources/tabs-group-pro.png` is the Marketplace icon. Keep it at least 128×128 pixels; Marketplace icons cannot be SVG.
-- The monochrome `resources/tab-groups.svg` is the VS Code Activity Bar icon. The editable brand source is `resources/tabs-group-pro.svg`.
+- The included `resources/tab-group-pro.png` is the Marketplace icon. Keep it at least 128×128 pixels; Marketplace icons cannot be SVG.
+- The monochrome `resources/tab-group.svg` is the VS Code Activity Bar icon. The editable brand source is `resources/tab-group-pro.svg`.
 - Add `galleryBanner`, `homepage`, and `bugs` after the final repository URL is known.
 - Use HTTPS for all remote images in README and CHANGELOG. Marketplace publishing rejects untrusted SVG content.
 

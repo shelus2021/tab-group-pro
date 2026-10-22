@@ -12,7 +12,7 @@ const {
     getAbsolutePathComparisonKey
 } = require("./group-data");
 
-class TabGroupsDragAndDrop {
+class TabGroupDragAndDrop {
     constructor(getGroups, commitChanges, editorTabs) {
         this.getGroups = getGroups;
         this.commitChanges = commitChanges;
@@ -216,4 +216,4 @@ class TabGroupsDragAndDrop {
     }
 }
 
-exports.TabGroupsDragAndDrop = TabGroupsDragAndDrop;
+exports.TabGroupDragAndDrop = TabGroupDragAndDrop;

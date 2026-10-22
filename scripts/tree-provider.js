@@ -2,7 +2,7 @@
 
 // Tree view state and group/tab actions.
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TabGroupsTreeProvider = void 0;
+exports.TabGroupTreeProvider = void 0;
 const vscode = require("vscode");
 const path = require("path");
 const { TabGroupItem } = require("./tree-item");
@@ -16,11 +16,11 @@ const {
     createQuickPickGroupsOptions,
     getCurrentlyOpenFiles
 } = require("./vscode-utils");
-const { TabGroupsDragAndDrop } = require("./tree-drag-drop");
+const { TabGroupDragAndDrop } = require("./tree-drag-drop");
 /**
  * The tree view class. Represents the explorer tree.
  */
-class TabGroupsTreeProvider {
+class TabGroupTreeProvider {
     /**
      * Create a new tree view.
      * Register all the commands available for this tree.
@@ -31,7 +31,7 @@ class TabGroupsTreeProvider {
         this.m_data = [];
         // with the vscode.EventEmitter we can refresh our  tree view
         this.m_onDidChangeTreeData = new vscode.EventEmitter();
-        // and vscode will access the event by using a readonly onDidChangeTreeData 
+        // and vscode will access the event by using a readonly onDidChangeTreeData
         //(this member has to be named like here, otherwise vscode doesnt update our treeview.
         this.onDidChangeTreeData = this.m_onDidChangeTreeData.event;
         this.context = context;
@@ -44,7 +44,7 @@ class TabGroupsTreeProvider {
                 await this.commitChanges();
             }
         );
-        this.dragAndDropController = new TabGroupsDragAndDrop(
+        this.dragAndDropController = new TabGroupDragAndDrop(
             () => this.m_data,
             async (groups, replaceGroups = false) => {
                 if (replaceGroups) this.m_data = groups;
@@ -116,7 +116,7 @@ class TabGroupsTreeProvider {
         let result = new vscode.TreeItem(title, item.collapsibleState);
         // here we add our command which executes our memberfunction
         result.command = {
-            command: "tabs_group_pro.item_clicked",
+            command: "tab_group_pro.item_clicked",
             title: title,
             arguments: [item],
         };
@@ -134,7 +134,7 @@ class TabGroupsTreeProvider {
         if (!element) {
             return this.m_data.map(item => {
                 if (this.treeView && item.isRoot) {
-                    this.treeView.reveal(item, { 
+                    this.treeView.reveal(item, {
                         expand: item.collapsibleState === vscode.TreeItemCollapsibleState.Expanded,
                         focus: false, // 避免初始化时聚焦
                         select: false // 避免初始化时聚焦
@@ -242,9 +242,9 @@ class TabGroupsTreeProvider {
     /*** MID LEVEL ***/
 
     async addEntryToGroup(item) {
-        if(!item){ 
+        if(!item){
             vscode.window.showErrorMessage('Only can be added to Group when right click on a file.');
-            return; 
+            return;
         }
         const selectedFilePath = item.fsPath || item._fsPath;
         if (!selectedFilePath) {
@@ -321,7 +321,7 @@ class TabGroupsTreeProvider {
                 parent.add_child(newChild);
                 filePaths.push(filePath);
             }
-            if(vscode.workspace.getConfiguration("tabs-group-pro").get("closeTabsOnAddAllToGroup")){
+            if(vscode.workspace.getConfiguration("tab-group-pro").get("closeTabsOnAddAllToGroup")){
                 await this.editorTabs.close(filePaths);
             }
             parent.updateTooltip();
@@ -382,7 +382,7 @@ class TabGroupsTreeProvider {
      */
     async openTabGroup(item) {
         // Check if the user wants the other tabs to be closed when opening a new group
-        if (vscode.workspace.getConfiguration("tabs-group-pro").get("closeTabsOnOpenGroup")) {
+        if (vscode.workspace.getConfiguration("tab-group-pro").get("closeTabsOnOpenGroup")) {
             // close every open tab
             await vscode.commands.executeCommand("workbench.action.closeAllEditors");
         }
@@ -682,4 +682,4 @@ class TabGroupsTreeProvider {
         this.groupLabel = null;
     }
 }
-exports.TabGroupsTreeProvider = TabGroupsTreeProvider;
+exports.TabGroupTreeProvider = TabGroupTreeProvider;

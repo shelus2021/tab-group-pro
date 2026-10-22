@@ -6,9 +6,9 @@ const vscode = require("vscode");
 const path = require("path");
 const { getAbsolutePathComparisonKey } = require("./group-data");
 
-const EXTENSION_ID = "tabs_group_pro";
+const EXTENSION_ID = "tab_group_pro";
 const NEW_GROUP_LABEL = "Create New Group";
-const TREE_MIME_TYPE = "application/vnd.code.tree.tabs_group_pro";
+const TREE_MIME_TYPE = "application/vnd.code.tree.tab_group_pro";
 const URI_LIST_MIME_TYPE = "text/uri-list";
 
 class EditorTabs {
@@ -114,7 +114,7 @@ function getCurrentlyOpenFiles(workspaceDir) {
     return result;
 }
 
-const outputChannel = vscode.window.createOutputChannel("Tabs Group Pro", { log: true });
+const outputChannel = vscode.window.createOutputChannel("Tab Group Pro", { log: true });
 
 function logMessage(message) {
     outputChannel.appendLine(message);

@@ -75,7 +75,7 @@ class GroupImportExport {
                 }))
             };
             const targetUri = await vscode.window.showSaveDialog({
-                defaultUri: vscode.Uri.joinPath(workspaceFolders[0].uri, "tabs-group-pro-groups.json"),
+                defaultUri: vscode.Uri.joinPath(workspaceFolders[0].uri, "tab-group-pro-groups.json"),
                 filters: { "JSON files": ["json"] },
                 saveLabel: "Export"
             });

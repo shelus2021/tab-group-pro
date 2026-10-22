@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
 // VS Code extensibility API
 const vscode = require("vscode");
-const { TabGroupsTreeProvider } = require("./tree-provider");
+const { TabGroupTreeProvider } = require("./tree-provider");
 const { EXTENSION_ID, disposeOutputChannel } = require("./vscode-utils");
 
 function registerCommands(target) {
@@ -32,14 +32,14 @@ function registerCommands(target) {
         addAllToGroup: () => target.addAllOpenTabsToGroup()
     };
     return Object.entries(handlers).map(([command, handler]) =>
-        vscode.commands.registerCommand(`tabs_group_pro.${command}`, handler)
+        vscode.commands.registerCommand(`tab_group_pro.${command}`, handler)
     );
 }
 /**
  * Called when the extension is started
  */
 async function activate(context) {
-    const treeDataProvider = new TabGroupsTreeProvider(context);
+    const treeDataProvider = new TabGroupTreeProvider(context);
     const treeView = vscode.window.createTreeView(EXTENSION_ID, {
         treeDataProvider: treeDataProvider,
         dragAndDropController: treeDataProvider.dragAndDropController

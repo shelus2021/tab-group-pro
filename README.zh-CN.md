@@ -1,10 +1,10 @@
-# Tabs Group Pro
+# Tab Group Pro
 
 简体中文 | [English](README.md)
 
 为每个 VS Code 工作区创建可持久保存的文件分组，并按确定的顺序重新打开所需文件。
 
-[从 Visual Studio Marketplace 安装 Tabs Group Pro](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
+[从 Visual Studio Marketplace 安装 Tab Group Pro](https://marketplace.visualstudio.com/items?itemName=shelus2021.tab-group-pro)
 
 ## 功能
 
@@ -25,13 +25,13 @@
 
 | 创建第一个分组 | 管理分组文件 |
 | --- | --- |
-| <img src="screenshots/empty-state.png" alt="Tabs Group Pro 空白状态，可创建分组或添加所有已打开标签页" width="360"> | <img src="screenshots/group-actions.png" alt="Tabs Group Pro 展示分组文件及分组操作菜单" width="360"> |
+| <img src="screenshots/empty-state.png" alt="Tab Group Pro 空白状态，可创建分组" width="360"> | <img src="screenshots/group-actions.png" alt="Tab Group Pro 展示分组文件及分组操作菜单" width="360"> |
 
 ## 快速开始
 
 1. 在 VS Code 中打开文件夹或工作区。
-2. 从活动栏打开 **Tabs Group Pro**。
-3. 执行 **Tabs Group Pro: Add a New Group**，或使用 **Add All Opened Tabs to Group**。
+2. 从活动栏打开 **Tab Group Pro**。
+3. 执行 **Tab Group Pro: Add a New Group**，或使用 **Add All Opened Tabs to Group**。
 4. 拖动分组或标签进行排序；将标签拖到其他分组即可跨组移动，也可在编辑器与分组之间双向拖动标签。
 
 分组保存在 VS Code 的工作区状态中，再次打开同一工作区时会自动恢复。分组标签仅持久化工作区相对路径，加载时根据当前工作区重新解析。
@@ -58,8 +58,8 @@ JSON 格式如下：
 
 | 配置项 | 默认值 | 说明 |
 | --- | --- | --- |
-| `tabs-group-pro.closeTabsOnOpenGroup` | `false` | 打开分组前关闭当前所有编辑器标签。 |
-| `tabs-group-pro.closeTabsOnAddAllToGroup` | `false` | 将全部文本标签加入分组后关闭这些标签。 |
+| `tab-group-pro.closeTabsOnOpenGroup` | `false` | 打开分组前关闭当前所有编辑器标签。 |
+| `tab-group-pro.closeTabsOnAddAllToGroup` | `false` | 将全部文本标签加入分组后关闭这些标签。 |
 
 ## 使用限制
 

@@ -4,10 +4,10 @@
 
 ## 维护版本
 
-- 项目：Tabs Group Pro 2.0.7
+- 项目：Tab Group Pro 2.0.8
 - 维护者与发布者：shelus2021
 - 联系方式：[shelus2021@foxmail.com](mailto:shelus2021@foxmail.com)
-- 仓库：<https://github.com/shelus2021/tabs-group-pro>
+- 仓库：<https://github.com/shelus2021/tab-group-pro>
 
 ## 上游来源
 

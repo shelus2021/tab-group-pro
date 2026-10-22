@@ -1,6 +1,6 @@
 {
-	"name": "tabs-group-pro",
-	"displayName": "Tabs Group Pro",
+	"name": "tab-group-pro",
+	"displayName": "Tab Group Pro",
 	"description": "Create and manage tab groups to improve your development workflow.",
 	"keywords": [
 		"productivity",
@@ -8,12 +8,12 @@
 		"tab groups",
 		"file groups"
 	],
-	"icon": "resources/tabs-group-pro.png",
+	"icon": "resources/tab-group-pro.png",
 	"galleryBanner": {
 		"color": "#151B2B",
 		"theme": "dark"
 	},
-	"version": "2.0.7",
+	"version": "2.0.8",
 	"publisher": "shelus2021",
 	"author": {
 		"name": "shelus2021",
@@ -22,11 +22,11 @@
 	"license": "SEE LICENSE IN LICENSE",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/shelus2021/tabs-group-pro.git"
+		"url": "https://github.com/shelus2021/tab-group-pro.git"
 	},
-	"homepage": "https://github.com/shelus2021/tabs-group-pro#readme",
+	"homepage": "https://github.com/shelus2021/tab-group-pro#readme",
 	"bugs": {
-		"url": "https://github.com/shelus2021/tabs-group-pro/issues"
+		"url": "https://github.com/shelus2021/tab-group-pro/issues"
 	},
 	"engines": {
 		"vscode": "^1.74.0"
@@ -35,19 +35,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onView:tabs_group_pro"
+		"onView:tab_group_pro"
 	],
 	"main": "./scripts/extension.js",
 	"contributes": {
 		"configuration": {
-			"title": "Tabs Group Pro",
+			"title": "Tab Group Pro",
 			"properties": {
-				"tabs-group-pro.closeTabsOnOpenGroup": {
+				"tab-group-pro.closeTabsOnOpenGroup": {
 					"type": "boolean",
 					"default": false,
 					"description": "Close currently open tabs when opening a tab group."
 				},
-				"tabs-group-pro.closeTabsOnAddAllToGroup": {
+				"tab-group-pro.closeTabsOnAddAllToGroup": {
 					"type": "boolean",
 					"default": false,
 					"description": "Close currently open tabs after adding all of them to a group."
@@ -57,238 +57,238 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "tabs-group-pro-view-container",
-					"title": "Tabs Group Pro",
-					"icon": "resources/tab-groups.svg"
+					"id": "tab-group-pro-view-container",
+					"title": "Tab Group Pro",
+					"icon": "resources/tab-group.svg"
 				}
 			]
 		},
 		"views": {
-			"tabs-group-pro-view-container": [
+			"tab-group-pro-view-container": [
 				{
-					"id": "tabs_group_pro",
-					"name": "Tabs Group Pro"
+					"id": "tab_group_pro",
+					"name": "Tab Group Pro"
 				}
 			]
 		},
 		"viewsWelcome": [
 			{
-				"view": "tabs_group_pro",
-				"contents": "No tab groups yet.\n[Create Group](command:tabs_group_pro.addTabGroup)\n[Add All Open Tabs](command:tabs_group_pro.addAllToGroup)"
+				"view": "tab_group_pro",
+				"contents": "No tab groups yet.\n[Create Group](command:tab_group_pro.addTabGroup)"
 			}
 		],
 		"menus": {
 			"view/title": [
 				{
-					"command": "tabs_group_pro.addAllToGroup",
-					"when": "view == tabs_group_pro",
+					"command": "tab_group_pro.addAllToGroup",
+					"when": "view == tab_group_pro",
 					"group": "navigation@0"
 				},
 				{
-					"command": "tabs_group_pro.collapseAllGroups",
-					"when": "view == tabs_group_pro",
+					"command": "tab_group_pro.collapseAllGroups",
+					"when": "view == tab_group_pro",
 					"group": "navigation@1"
 				},
 				{
-					"command": "tabs_group_pro.importGroups",
-					"when": "view == tabs_group_pro",
+					"command": "tab_group_pro.importGroups",
+					"when": "view == tab_group_pro",
 					"group": "navigation@2"
 				},
 				{
-					"command": "tabs_group_pro.exportGroups",
-					"when": "view == tabs_group_pro",
+					"command": "tab_group_pro.exportGroups",
+					"when": "view == tab_group_pro",
 					"group": "navigation@3"
 				}
 			],
 			"view/item/context": [
 				{
-					"command": "tabs_group_pro.addEntry",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
+					"command": "tab_group_pro.addEntry",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
 					"group": "inline@1"
 				},
 				{
-					"command": "tabs_group_pro.moveUp",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
+					"command": "tab_group_pro.moveUp",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
 					"group": "inline@2"
 				},
 				{
-					"command": "tabs_group_pro.moveDown",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
+					"command": "tab_group_pro.moveDown",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
 					"group": "inline@3"
 				},
 				{
-					"command": "tabs_group_pro.openTabGroup",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_0@0"
+					"command": "tab_group_pro.openTabGroup",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_0@0"
 				},
 				{
-					"command": "tabs_group_pro.closeTabGroup",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_0@1"
+					"command": "tab_group_pro.closeTabGroup",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_0@1"
 				},
 				{
-					"command": "tabs_group_pro.copyTabsPathInGroup",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_1@0"
+					"command": "tab_group_pro.copyTabsPathInGroup",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_1@0"
 				},
 				{
-					"command": "tabs_group_pro.copyTabsRelativePathInGroup",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_1@1"
+					"command": "tab_group_pro.copyTabsRelativePathInGroup",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_1@1"
 				},
 				{
-					"command": "tabs_group_pro.editTabGroupName",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_2@0"
+					"command": "tab_group_pro.editTabGroupName",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_2@0"
 				},
 				{
-					"command": "tabs_group_pro.clearTabsInGroup",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_3@0"
+					"command": "tab_group_pro.clearTabsInGroup",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_3@0"
 				},
 				{
-					"command": "tabs_group_pro.removeTabGroup",
-					"when": "view == tabs_group_pro && viewItem == tgp_root_item",
-					"group": "tabs_group_pro_3@1"
+					"command": "tab_group_pro.removeTabGroup",
+					"when": "view == tab_group_pro && viewItem == tgp_root_item",
+					"group": "tab_group_pro_3@1"
 				},
 				{
-					"command": "tabs_group_pro.moveUp",
-					"when": "view == tabs_group_pro && viewItem == tgp_child_item",
+					"command": "tab_group_pro.moveUp",
+					"when": "view == tab_group_pro && viewItem == tgp_child_item",
 					"group": "inline@0"
 				},
 				{
-					"command": "tabs_group_pro.moveDown",
-					"when": "view == tabs_group_pro && viewItem == tgp_child_item",
+					"command": "tab_group_pro.moveDown",
+					"when": "view == tab_group_pro && viewItem == tgp_child_item",
 					"group": "inline@1"
 				},
 				{
-					"command": "tabs_group_pro.openTab",
-					"when": "view == tabs_group_pro && viewItem == tgp_child_item",
-					"group": "tabs_group_pro_3@0"
+					"command": "tab_group_pro.openTab",
+					"when": "view == tab_group_pro && viewItem == tgp_child_item",
+					"group": "tab_group_pro_3@0"
 				},
 				{
-					"command": "tabs_group_pro.closeTab",
-					"when": "view == tabs_group_pro && viewItem == tgp_child_item",
-					"group": "tabs_group_pro_3@1"
+					"command": "tab_group_pro.closeTab",
+					"when": "view == tab_group_pro && viewItem == tgp_child_item",
+					"group": "tab_group_pro_3@1"
 				},
 				{
-					"command": "tabs_group_pro.removeTab",
-					"when": "view == tabs_group_pro && viewItem == tgp_child_item",
-					"group": "tabs_group_pro_4@0"
+					"command": "tab_group_pro.removeTab",
+					"when": "view == tab_group_pro && viewItem == tgp_child_item",
+					"group": "tab_group_pro_4@0"
 				}
 			],
 			"editor/title/context": [
 				{
-					"command": "tabs_group_pro.addEntryToGroup",
+					"command": "tab_group_pro.addEntryToGroup",
 					"when": "resourceScheme == file"
 				}
 			],
 			"explorer/context": [
 				{
-					"command": "tabs_group_pro.addEntryToGroup",
+					"command": "tab_group_pro.addEntryToGroup",
 					"when": "resourceScheme == file"
 				}
 			]
 		},
 		"commands": [
 			{
-				"command": "tabs_group_pro.expandAllGroups",
-				"title": "Tabs Group Pro: Expand All Groups",
+				"command": "tab_group_pro.expandAllGroups",
+				"title": "Tab Group Pro: Expand All Groups",
 				"icon": "$(expand-all)"
 			},
 			{
-				"command": "tabs_group_pro.collapseAllGroups",
-				"title": "Tabs Group Pro: Collapse All Groups",
+				"command": "tab_group_pro.collapseAllGroups",
+				"title": "Tab Group Pro: Collapse All Groups",
 				"icon": "$(collapse-all)"
 			},
 			{
-				"command": "tabs_group_pro.addTabGroup",
-				"title": "Tabs Group Pro: Add a New Group",
+				"command": "tab_group_pro.addTabGroup",
+				"title": "Tab Group Pro: Add a New Group",
 				"icon": "$(add)"
 			},
 			{
-				"command": "tabs_group_pro.removeAllGroups",
-				"title": "Tabs Group Pro: Remove All Groups",
+				"command": "tab_group_pro.removeAllGroups",
+				"title": "Tab Group Pro: Remove All Groups",
 				"icon": "$(close-all)"
 			},
 			{
-				"command": "tabs_group_pro.importGroups",
-				"title": "Tabs Group Pro: Import Groups from JSON",
+				"command": "tab_group_pro.importGroups",
+				"title": "Tab Group Pro: Import Groups from JSON",
 				"icon": "$(download)"
 			},
 			{
-				"command": "tabs_group_pro.exportGroups",
-				"title": "Tabs Group Pro: Export Groups to JSON",
+				"command": "tab_group_pro.exportGroups",
+				"title": "Tab Group Pro: Export Groups to JSON",
 				"icon": "$(export)"
 			},
 			{
-				"command": "tabs_group_pro.addEntry",
+				"command": "tab_group_pro.addEntry",
 				"title": "Add Tab",
 				"icon": "$(new-file)"
 			},
 			{
-				"command": "tabs_group_pro.openTabGroup",
+				"command": "tab_group_pro.openTabGroup",
 				"title": "Open Group",
 				"icon": "$(chrome-restore)"
 			},
 			{
-				"command": "tabs_group_pro.closeTabGroup",
+				"command": "tab_group_pro.closeTabGroup",
 				"title": "Close Group"
 			},
 			{
-				"command": "tabs_group_pro.copyTabsPathInGroup",
+				"command": "tab_group_pro.copyTabsPathInGroup",
 				"title": "Copy Tabs Path"
 			},
 			{
-				"command": "tabs_group_pro.copyTabsRelativePathInGroup",
+				"command": "tab_group_pro.copyTabsRelativePathInGroup",
 				"title": "Copy Tabs Relative Path"
 			},
 			{
-				"command": "tabs_group_pro.editTabGroupName",
+				"command": "tab_group_pro.editTabGroupName",
 				"title": "Edit Group Name"
 			},
 			{
-				"command": "tabs_group_pro.clearTabsInGroup",
+				"command": "tab_group_pro.clearTabsInGroup",
 				"title": "Clear Group"
 			},
 			{
-				"command": "tabs_group_pro.removeTabGroup",
+				"command": "tab_group_pro.removeTabGroup",
 				"title": "Remove Group",
 				"icon": "$(close)"
 			},
 			{
-				"command": "tabs_group_pro.moveUp",
+				"command": "tab_group_pro.moveUp",
 				"title": "Move Up",
 				"icon": "$(chevron-up)"
 			},
 			{
-				"command": "tabs_group_pro.moveDown",
+				"command": "tab_group_pro.moveDown",
 				"title": "Move Down",
 				"icon": "$(chevron-down)"
 			},
 			{
-				"command": "tabs_group_pro.openTab",
+				"command": "tab_group_pro.openTab",
 				"title": "Open Tab"
 			},
 			{
-				"command": "tabs_group_pro.closeTab",
+				"command": "tab_group_pro.closeTab",
 				"title": "Close Tab"
 			},
 			{
-				"command": "tabs_group_pro.removeTab",
+				"command": "tab_group_pro.removeTab",
 				"title": "Remove Tab from Group"
 			},
 			{
-				"command": "tabs_group_pro.item_clicked",
+				"command": "tab_group_pro.item_clicked",
 				"title": "View Group Item"
 			},
 			{
-				"command": "tabs_group_pro.addEntryToGroup",
-				"title": "Tabs Group Pro: Add to Tab Group"
+				"command": "tab_group_pro.addEntryToGroup",
+				"title": "Tab Group Pro: Add to Tab Group"
 			},
 			{
-				"command": "tabs_group_pro.addAllToGroup",
-				"title": "Tabs Group Pro: Add All Opened Tabs to Group",
+				"command": "tab_group_pro.addAllToGroup",
+				"title": "Tab Group Pro: Add All Opened Tabs to Group",
 				"icon": "$(add)"
 			}
 		]

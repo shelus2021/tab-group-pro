@@ -1,10 +1,10 @@
-# Tabs Group Pro
+# Tab Group Pro
 
 [简体中文](README.zh-CN.md) | English
 
 Create persistent file groups for each VS Code workspace and reopen the files you need in a predictable order.
 
-[Install Tabs Group Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tabs-group-pro)
+[Install Tab Group Pro from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shelus2021.tab-group-pro)
 
 ## Features
 
@@ -25,13 +25,13 @@ Create persistent file groups for each VS Code workspace and reopen the files yo
 
 | Create your first group | Manage grouped files |
 | --- | --- |
-| <img src="screenshots/empty-state.png" alt="Tabs Group Pro empty state with actions to create a group or add all open tabs" width="360"> | <img src="screenshots/group-actions.png" alt="Tabs Group Pro showing grouped files and the group actions menu" width="360"> |
+| <img src="screenshots/empty-state.png" alt="Tab Group Pro empty state with an action to create a group" width="360"> | <img src="screenshots/group-actions.png" alt="Tab Group Pro showing grouped files and the group actions menu" width="360"> |
 
 ## Getting started
 
 1. Open a folder or workspace in VS Code.
-2. Open **Tabs Group Pro** from the Activity Bar.
-3. Run **Tabs Group Pro: Add a New Group**, or use **Add All Opened Tabs to Group**.
+2. Open **Tab Group Pro** from the Activity Bar.
+3. Run **Tab Group Pro: Add a New Group**, or use **Add All Opened Tabs to Group**.
 4. Drag groups or tabs to reorder them. Drop a tab on another group to move it across groups, or drag tabs in either direction between the editor and a group.
 
 Groups are stored in VS Code workspace state and restored when that workspace is opened again. Grouped tabs are persisted as workspace-relative paths and resolved against the currently open workspace when loaded.
@@ -58,8 +58,8 @@ The JSON format is:
 
 | Setting | Default | Description |
 | --- | --- | --- |
-| `tabs-group-pro.closeTabsOnOpenGroup` | `false` | Close all currently open editors before opening a group. |
-| `tabs-group-pro.closeTabsOnAddAllToGroup` | `false` | Close open text tabs after adding all of them to a group. |
+| `tab-group-pro.closeTabsOnOpenGroup` | `false` | Close all currently open editors before opening a group. |
+| `tab-group-pro.closeTabsOnAddAllToGroup` | `false` | Close open text tabs after adding all of them to a group. |
 
 ## Notes and limitations
 
